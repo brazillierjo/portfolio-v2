@@ -40,7 +40,7 @@ function submitForm(e, formName) {
     };
 
     $.ajax({
-        type: "POST",
+        type: "GET",
         url: 'mail.php',
         data: formData,
         success: function () {
