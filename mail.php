@@ -5,8 +5,8 @@ $email   = "steve.duran@neuf.fr";
 $message = "Test de message";
 
 $to      = "j.brazillier@gmail.com";
-$from    = "contact@synergy-development.fr";
-$subject = "New message from www.synergy-development.fr";
+$from    = "test@test.com";
+$subject = "Nouveau message de contact";
 
 $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
