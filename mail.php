@@ -18,9 +18,7 @@
 	$body .= "<p><b>Sujet: </b>".$subject."</p>";
 	$body .= "<p><b>Message: </b>".$_REQUEST['message']."</p>";
 
-	if( mail($emailTo, $subject, $body, $headers) ){
-		$mail_sent = true;
-	} else {
+	if( !mail($emailTo, $subject, $body, $headers) ){
 		$mail_sent = false;
 	}
 	if(!isset($resp)){

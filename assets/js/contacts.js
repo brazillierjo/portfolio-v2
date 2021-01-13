@@ -40,11 +40,11 @@ function submitForm(e, formName) {
     };
 
     $.ajax({
-        type: "GET",
+        type: "POST",
         url: 'mail.php',
         data: formData,
         success: function () {
-            console.log('success');
+            console.log(formData);
             //...
         },
         error: function () {
