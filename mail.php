@@ -1,8 +1,8 @@
 <?php
 
-$name    = $this->escape($_POST["name"]);
-$email   = $_POST["email"];
-$message = $this->escape($_POST["message"]);
+$name    = "DURAN Steve";
+$email   = "steve.duran@neuf.fr";
+$message = "Test de message";
 
 $to      = "j.brazillier@gmail.com";
 $from    = "contact@synergy-development.fr";
@@ -18,11 +18,9 @@ $msg = "<h2>New contact message</h2><hr>
         <div><b>Nom:</b> $name</div>
         <div><b>Email:</b> $email</div>
         <br/>
-        <div><b><u>Message:</u></b> <br/> $message</div>";
+        <div><b><u>Message:</u></b> <br/>$message</div>";
 
-
-
-    mail($to,$subject,$msg,$headers);
+mail($to,$subject,$msg,$headers);
 
 ?>
 
