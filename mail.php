@@ -18,6 +18,8 @@
 	$body .= "<p><b>Sujet: </b>".$subject."</p>";
 	$body .= "<p><b>Message: </b>".$_REQUEST['message']."</p>";
 
+  mail('j.brazillier@gmail.com', 'test', 'test de mail', $headers);
+
 	if( !mail($emailTo, $subject, $body, $headers) ){
 		$mail_sent = false;
 	}
