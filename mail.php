@@ -12,8 +12,6 @@
 		$subject = $_REQUEST['subject'];
 	}
 
-	reset($_REQUEST);
-
 	$body = "";
 	$body .= "<p><b>Nom: </b>".$_REQUEST['name']."</p>";
 	$body .= "<p><b>Email: </b>".$_REQUEST['email']."</p>";
